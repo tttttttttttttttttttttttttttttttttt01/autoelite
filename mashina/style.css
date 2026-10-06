@@ -1,0 +1,66 @@
+/* ==========================================================
+   AUTOELITE - MAXSUS STILLAR & ANIMATSIYALAR
+   ========================================================== */
+
+/* Shishasimon (Glassmorphism) effekti */
+.glass-card {
+  background: rgba(18, 20, 28, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Oltin gradient matn effekti */
+.gold-gradient {
+  background: linear-gradient(135deg, #FFDF00 0%, #D4AF37 50%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Maxsus Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252836;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Gorizontal navigatsiya uchun scrollbarni yashirish */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Karta hover animatsiyalari */
+.car-card-hover {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.car-card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+/* Modal silliq ko'rinishi */
+.modal-active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.modal-active > div {
+  transform: scale(1) !important;
+}
